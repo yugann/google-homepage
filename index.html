@@ -1,17 +1,146 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta content="origin" name="referrer">
-    <meta content="/images/branding/google/lx/googleg_standard_color_128dp.png" itemprop="image">
-    <meta content="origin" name="referrer">
+    <meta charset="UTF-8""/images/branding/google/lx/googleg_standard_color_128dp.png" itemprop="image">
     <title>Google Clone</title>
 </head>
 <body>
-    <div>
-        <img alt="Google" height="92" id="hplogo" src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" style="padding-top: 109px;" width="272" data-atf="1">
+    <div class="barra">
+        <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
+        <a href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&authuser=0&ogbl">Imagens</a>
+        <a href="https://www.google.com.br/intl/pt-BR/about/products?tab=wh"><img class="menu" src="https://icon-library.com/images/icon-for-menu/icon-for-menu-12.jpg"></a>
+        <img class="avatar" src="https://w7.pngwing.com/pngs/249/19/png-transparent-google-logo-g-suite-google-guava-google-plus-company-text-logo.png">
     </div>
-
+    <div class="container">
+        <img class="logo" alt="Google" id="hplogo" src="https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="container">
+        <input class="searchbox">
+    </div>
+    <div class="container">
+        <input class="searchbuttons" value="Pesquisa Google" title="Pesquisa" type="submit">
+        <input class="searchbuttons" value="Estou com sorte" title="Estou com sorte" type="submit">
+    </div>
+    <div class="bottom">Brasil</div>
+    <div class="bottomlinks">
+        <a href="">Publicidade</a>
+        <a href="">Negócios</a>
+        <a href="">Sobre</a>
+        <a href="">Como funciona a Pesquisa</a>
+    </div>
 </body>
-
+<style>
+    .container {
+        text-align: center;
+    }
+    .barra {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.87);
+        margin-top: 15px;
+    }
+    div.barra a:link, a:visited, a:active {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.87);
+        text-decoration: none;
+    }
+    div.barra a:hover {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.87);
+        text-decoration: underline;
+    }
+    .logo {
+        text-align: center;
+        margin-top: 155px;
+        width: 272px;
+        height: 92px;
+        }
+    .searchbox {
+        height: 40px;
+        width: 450px;
+        border-radius: 25px;
+        border-color: rgb(0, 0, 0, 0.1);
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 25px;
+        border-width: 1px;
+        outline: none;     
+    }
+    .searchbox:hover {
+        outline: none;
+        box-shadow: 0px 2px 5px 1px #ccc;
+    }
+    .avatar {
+        margin-right: 15px;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+    }
+    .menu {
+        padding: 0px 3px;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+    }
+    .searchbuttons {
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        border-width: 0px;
+        padding: 10px 20px;
+        margin: 30px 5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #5F6368;
+        outline: none;
+    }
+    .searchbuttons:hover {
+        color: rgb(0, 0, 0, 0.87);
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    .bottom {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        text-align: left;
+        color: rgb(0, 0, 0, 0.54);
+        display: block;
+        background-color: rgb(0, 0, 0, 0.05);
+        padding: 10px 30px;
+        border: 0.5px solid rgb(0, 0, 0, 0.05);
+        width: 100%;
+        display: flex;
+    }
+    .bottomlinks {
+        font-size: 15px;
+        background-color: rgb(0, 0, 0, 0.05);
+        padding: 10px 30px;
+        border: 0.5px solid rgb(0, 0, 0, 0.05);
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    div.bottomlinks a {
+        font-family: Arial, sans-serif;
+        color: rgb(0, 0, 0, 0.54);
+        text-decoration: none;
+    }
+    div.bottomlinks a:hover {
+        font-family: Arial, sans-serif;
+        color: rgb(0, 0, 0, 0.54);
+        text-decoration: underline;
+    }
+    body {
+        margin: 0px;
+    }
+</style>
 </html>
