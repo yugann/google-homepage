@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="pt-BR">
 <head>
-    <meta charset="UTF-8""/images/branding/google/lx/googleg_standard_color_128dp.png" itemprop="image">
     <title>Google Clone</title>
 </head>
 <body>
@@ -23,10 +22,17 @@
     </div>
     <div class="bottom">Brasil</div>
     <div class="bottomlinks">
-        <a href="">Publicidade</a>
-        <a href="">Negócios</a>
-        <a href="">Sobre</a>
-        <a href="">Como funciona a Pesquisa</a>
+        <div class="left">
+        <a href="https://www.google.com.br/intl/pt-BR_br/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
+        <a href="https://www.google.com.br/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negócios</a>
+        <a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
+        <a href="https://google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a>
+        </div>
+        <div class="right">
+        <a href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a>
+        <a href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a>
+        <a href="https://www.google.com.br/preferences?hl=pt-BR">Configurações</a>
+        </div>
     </div>
 </body>
 <style>
@@ -108,26 +114,41 @@
     }
     .bottom {
         font-family: Arial, sans-serif;
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 40px;
         text-align: left;
+        padding-left: 30px;
         color: rgb(0, 0, 0, 0.54);
         display: block;
         background-color: rgb(0, 0, 0, 0.05);
-        padding: 10px 30px;
         border: 0.5px solid rgb(0, 0, 0, 0.05);
+        position: absolute;
         width: 100%;
-        display: flex;
+        bottom: 42px;
+        box-sizing: border-box;
     }
-    .bottomlinks {
-        font-size: 15px;
-        background-color: rgb(0, 0, 0, 0.05);
-        padding: 10px 30px;
-        border: 0.5px solid rgb(0, 0, 0, 0.05);
+    .bottomlinks .left {
         display: flex;
-        align-items: flex-end;
+        gap: 30px;
+        font-size: 14px;
+        line-height: 40px;
+        padding-left: 30px;
+        background-color: rgb(0, 0, 0, 0.05);
+        border: 0.5px solid rgb(0, 0, 0, 0.05);
         width: 100%;
-        position: fixed;
+        position: absolute;
         bottom: 0;
+        box-sizing: border-box;
+    }
+    .bottomlinks .right {
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+        line-height: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        box-sizing: border-box;
     }
     div.bottomlinks a {
         font-family: Arial, sans-serif;
